@@ -547,17 +547,17 @@ a.card:hover .card-link { color: var(--brass-2); }
   mix-blend-mode: normal;
 }
 .bio-portrait {
-  width: 9.5rem;
+  width: 7.25rem;
   margin: 0 0 1.15rem;
 }
 .bio-portrait img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 12%;
+  object-position: center;
   border: 1px solid var(--line);
-  background: #e4e2dc;
+  background: var(--navy);
 }
 .when-call .lede { max-width: 40rem; }
 .when-call .btn { margin-top: 0.35rem; }
