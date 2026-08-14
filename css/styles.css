@@ -546,6 +546,13 @@ a.card:hover .card-link { color: var(--brass-2); }
   display: block;
   mix-blend-mode: normal;
 }
+.media-frame--portrait img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+}
+.when-call .lede { max-width: 40rem; }
+.when-call .btn { margin-top: 0.35rem; }
 .caption {
   font-size: 0.78rem;
   color: var(--muted);
