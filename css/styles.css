@@ -547,7 +547,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   mix-blend-mode: normal;
 }
 .bio-portrait {
-  width: 8.75rem;
+  width: 7.25rem;
   margin: 0 0 1.15rem;
 }
 .bio-portrait img {
