@@ -546,10 +546,18 @@ a.card:hover .card-link { color: var(--brass-2); }
   display: block;
   mix-blend-mode: normal;
 }
-.media-frame--portrait img {
-  aspect-ratio: 4 / 5;
+.bio-portrait {
+  width: 8.75rem;
+  margin: 0 0 1.15rem;
+}
+.bio-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center;
+  border: 1px solid var(--line);
+  background: var(--navy);
 }
 .when-call .lede { max-width: 40rem; }
 .when-call .btn { margin-top: 0.35rem; }
