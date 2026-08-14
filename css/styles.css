@@ -908,8 +908,8 @@ a.card:hover .card-link { color: var(--brass-2); }
   .hero-content { padding: 6rem 0 5rem; }
   .hero-logo { height: 6.5rem; }
   .card-grid { grid-template-columns: 1fr 1fr; gap: 1.15rem; }
-  .tool-grid { grid-template-columns: 1fr 1fr; }
-  .tool-detail { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .tool-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .tool-detail { grid-template-columns: 1fr; align-items: stretch; }
   .split { grid-template-columns: 1.05fr 0.95fr; gap: 3rem; }
   .cred-grid { grid-template-columns: 1fr 1fr; gap: 1.4rem 2rem; }
   .client-grid { grid-template-columns: 1fr 1fr 1fr; }
