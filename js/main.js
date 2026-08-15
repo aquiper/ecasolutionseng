@@ -27,7 +27,7 @@
     });
 
     document.addEventListener("click", function (e) {
-      if (!header.contains(e.target)) setOpen(false);
+      if (header && !header.contains(e.target)) setOpen(false);
     });
 
     if (typeof window.matchMedia === "function") {
@@ -40,27 +40,24 @@
     }
   }
 
+  var fallback = document.getElementById("mailto-fallback");
   var form = document.getElementById("consult-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
+  if (fallback && form) {
+    fallback.addEventListener("click", function (e) {
       e.preventDefault();
       var name = (form.elements.name && form.elements.name.value.trim()) || "";
-      var company = (form.elements.company && form.elements.company.value.trim()) || "";
       var email = (form.elements.email && form.elements.email.value.trim()) || "";
+      var subject = (form.elements.subject && form.elements.subject.value.trim()) || "Consult request";
       var message = (form.elements.message && form.elements.message.value.trim()) || "";
-      var subject = "Consult request — " + (name || "EC&A website");
-      if (company) subject += " (" + company + ")";
       var body = [];
       body.push("Name: " + name);
-      body.push("Company: " + company);
       body.push("Email: " + email);
       body.push("");
       body.push(message);
-      var href =
+      window.location.href =
         "mailto:aquiles.perez@ecasolutionseng.com" +
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(body.join("\n"));
-      window.location.href = href;
     });
   }
 })();

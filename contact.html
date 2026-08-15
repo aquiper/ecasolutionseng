@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — EC&amp;A Solutions Eng LLC</title>
   <meta name="description" content="Request a consult with Aquiles Perez, PhD. Houston-area materials, integrity, and welding engineering. Phone (561) 503-6909.">
-  <meta name="theme-color" content="#0A1628">
+  <meta name="theme-color" content="#10161B">
   <link rel="canonical" href="https://ecasolutionseng.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EC&amp;A Solutions Eng LLC">
   <meta property="og:title" content="Contact — EC&amp;A Solutions Eng LLC">
   <meta property="og:description" content="Request a consult with Aquiles Perez, PhD. Houston-area materials, integrity, and welding engineering. Phone (561) 503-6909.">
   <meta property="og:url" content="https://ecasolutionseng.com/contact.html">
-  <meta property="og:image" content="https://ecasolutionseng.com/assets/subsea.jpg">
+  <meta property="og:image" content="https://ecasolutionseng.com/assets/piping.jpg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact — EC&amp;A Solutions Eng LLC">
@@ -22,7 +22,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -85,22 +85,28 @@
           <p class="eyebrow">Message</p>
           <h2>Send a brief</h2>
           <hr class="rule">
-          <p class="lede">Nothing is stored on this site. Submit opens your email client with a message to Aquiles Perez and a prefilled subject. If you skip the form, use the email and phone on this page.</p>
-          <form class="consult-form" id="consult-form" action="mailto:aquiles.perez@ecasolutionseng.com" method="post" enctype="text/plain">
+          <p class="lede">The form posts to FormSubmit and is delivered to aquiles.perez@ecasolutionseng.com. If that path is blocked, use the email-client fallback or the addresses on this page.</p>
+          <form class="consult-form" id="consult-form" action="https://formsubmit.co/aquiles.perez@ecasolutionseng.com" method="POST">
+            <input type="hidden" name="_next" value="https://ecasolutionseng.com/contact.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <label class="hp-field" for="company">Company
+              <input id="company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </label>
             <label for="name">Name
               <input id="name" name="name" type="text" autocomplete="name" required>
-            </label>
-            <label for="company">Company
-              <input id="company" name="company" type="text" autocomplete="organization">
             </label>
             <label for="email">Email
               <input id="email" name="email" type="email" autocomplete="email" required>
             </label>
+            <label for="subject">Subject
+              <input id="subject" name="_subject" type="text" required value="Consult request">
+            </label>
             <label for="message">Message
               <textarea id="message" name="message" required rows="6"></textarea>
             </label>
-            <button class="btn btn-navy" type="submit">Request a consult</button>
-            <p class="form-note">Sends via your mail application to aquiles.perez@ecasolutionseng.com. You can also call <a href="tel:5615036909">(561) 503-6909</a>.</p>
+            <button class="btn btn-ink" type="submit">Send</button>
+            <p class="form-note">Or <a id="mailto-fallback" href="mailto:aquiles.perez@ecasolutionseng.com">open your email client</a>. You can also call <a href="tel:5615036909">(561) 503-6909</a>.</p>
           </form>
         </div>
       </div>
