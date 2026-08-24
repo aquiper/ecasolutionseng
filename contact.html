@@ -94,8 +94,12 @@
           <p class="eyebrow">Message</p>
           <h2>Send a brief</h2>
           <hr class="rule">
-          <p class="lede">Nothing is stored on this site. Submit opens your email client with a message to Aquiles Perez and a prefilled subject. If you skip the form, use the email and phone on this page.</p>
-          <form class="consult-form" id="consult-form" action="mailto:aquiles.perez@ecasolutionseng.com" method="post" enctype="text/plain">
+          <p class="lede">Nothing is stored on this site. Submit sends the brief to Aquiles Perez. If you skip the form, use the email and phone on this page.</p>
+          <form class="consult-form" id="consult-form" action="https://formsubmit.co/aquiles.perez@ecasolutionseng.com" method="POST">
+            <input type="hidden" name="_subject" value="Consult request — EC&A website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://ecasolutionseng.com/contact.html">
             <label for="name">Name
               <input id="name" name="name" type="text" autocomplete="name" required>
             </label>
@@ -109,7 +113,7 @@
               <textarea id="message" name="message" required rows="6"></textarea>
             </label>
             <button class="btn btn-navy" type="submit">Request a consult</button>
-            <p class="form-note">Sends via your mail application to aquiles.perez@ecasolutionseng.com. You can also call <a href="tel:5615036909">(561) 503-6909</a>.</p>
+            <p class="form-note">Sends to aquiles.perez@ecasolutionseng.com. You can also call <a href="tel:5615036909">(561) 503-6909</a>.</p>
           </form>
         </div>
       </div>

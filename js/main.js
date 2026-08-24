@@ -40,27 +40,4 @@
     }
   }
 
-  var form = document.getElementById("consult-form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var name = (form.elements.name && form.elements.name.value.trim()) || "";
-      var company = (form.elements.company && form.elements.company.value.trim()) || "";
-      var email = (form.elements.email && form.elements.email.value.trim()) || "";
-      var message = (form.elements.message && form.elements.message.value.trim()) || "";
-      var subject = "Consult request — " + (name || "EC&A website");
-      if (company) subject += " (" + company + ")";
-      var body = [];
-      body.push("Name: " + name);
-      body.push("Company: " + company);
-      body.push("Email: " + email);
-      body.push("");
-      body.push(message);
-      var href =
-        "mailto:aquiles.perez@ecasolutionseng.com" +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body.join("\n"));
-      window.location.href = href;
-    });
-  }
 })();
