@@ -635,6 +635,12 @@ a.card:hover .card-link { color: var(--brass-2); }
 }
 .offer:nth-child(even) { background: var(--paper-2); }
 .offer-inner { width: min(var(--wrap), calc(100% - 2rem)); margin-inline: auto; }
+.offer figure {
+  margin: 1.35rem auto 0;
+  max-width: 28rem;
+}
+.offer figure .caption { text-align: center; }
+
 .offer-kicker {
   font-family: var(--serif);
   color: var(--brass);
