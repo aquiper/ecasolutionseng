@@ -69,7 +69,7 @@
       <div class="wrap">
         <p class="eyebrow">Contact</p>
         <h1>Request a consult.</h1>
-        <p class="lede">Write or call Aquiles Perez, PhD. Work is from the Houston, Texas area.</p>
+        <p class="lede">Discuss your project with Aquiles Perez, PhD. Materials, integrity, and welding engineering from the Houston, Texas area.</p>
       </div>
     </header>
 
@@ -94,26 +94,35 @@
           <p class="eyebrow">Message</p>
           <h2>Send a brief</h2>
           <hr class="rule">
-          <p class="lede">Nothing is stored on this site. Submit sends the brief to Aquiles Perez. If you skip the form, use the email and phone on this page.</p>
+          <p class="lede">Tell us what you need to assess and the decision you need to make. The next step is to discuss scope, available information, and timing.</p>
           <form class="consult-form" id="consult-form" action="https://formsubmit.co/aquiles.perez@ecasolutionseng.com" method="POST">
-            <input type="hidden" name="_subject" value="Consult request — EC&A website">
+            <input type="hidden" name="_subject" value="Consult request — EC&amp;A website">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://ecasolutionseng.com/contact.html">
-            <label for="name">Name
+            <input type="hidden" name="_next" value="https://ecasolutionseng.com/thank-you.html">
+            <p class="form-note">Name, email, and project brief are required. All other fields are optional.</p>
+            <label for="name">Name (required)
               <input id="name" name="name" type="text" autocomplete="name" required>
             </label>
-            <label for="company">Company
+            <label for="company">Company (optional)
               <input id="company" name="company" type="text" autocomplete="organization">
             </label>
-            <label for="email">Email
+            <label for="email">Email (required)
               <input id="email" name="email" type="email" autocomplete="email" required>
             </label>
-            <label for="message">Message
-              <textarea id="message" name="message" required rows="6"></textarea>
+            <label for="inquiry-topic">Service or tool (optional)
+              <input id="inquiry-topic" name="service_or_tool" type="text" maxlength="120" placeholder="e.g., corrosion assessment or MIC Risk Evaluator" aria-describedby="topic-help">
+            </label>
+            <p class="form-note" id="topic-help">You can edit this field if a tool has been selected.</p>
+            <label for="message">Project brief (required)
+              <textarea id="message" name="message" required rows="6" aria-describedby="message-help" placeholder="Component or system:&#10;Operating conditions:&#10;Decision needed:"></textarea>
+            </label>
+            <p class="form-note" id="message-help">Include the component or system, operating conditions, and the decision you need to make. A short description is enough to start.</p>
+            <label for="deadline">Target date or deadline (optional)
+              <input id="deadline" name="deadline" type="text" placeholder="e.g., before the November shutdown or still flexible">
             </label>
             <button class="btn btn-navy" type="submit">Request a consult</button>
-            <p class="form-note">Sends to aquiles.perez@ecasolutionseng.com. You can also call <a href="tel:5615036909">(561) 503-6909</a>.</p>
+            <p class="form-note">The form uses FormSubmit to forward your brief to <a href="mailto:aquiles.perez@ecasolutionseng.com">aquiles.perez@ecasolutionseng.com</a>. For a time-sensitive inquiry, call <a href="tel:5615036909">(561) 503-6909</a>.</p>
           </form>
         </div>
       </div>
