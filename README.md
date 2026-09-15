@@ -8,7 +8,7 @@ From this directory, run `python3 -m http.server 8766 --bind 127.0.0.1`, then op
 
 ## Content
 
-- `index.html`: introduction, principal, services, anonymized work examples, clients, tools.
+- `index.html`: introduction, services, anonymized work examples, clients, tools.
 - `about.html`: biography, credentials, and selected clients.
 - `services.html` and `services/*.html`: services and technical figures.
 - `tools.html`: client tools and links to tool-specific inquiries.
