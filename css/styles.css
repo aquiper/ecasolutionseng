@@ -9,9 +9,9 @@
   --paper: #F4F1EA;
   --paper-2: #E9E4D8;
   --cream: #FBF9F4;
-  --brass: #D6B86E;
+  --brass: #D2AE62;
   --brass-2: #8A6B2E;
-  --brass-dim: rgba(214, 184, 110, 0.35);
+  --brass-dim: rgba(210, 174, 98, 0.38);
   --ink: #1C1B18;
   --body: #2F2D29;
   --muted: #5E5A52;
@@ -373,6 +373,7 @@ main { flex: 1; }
   color: var(--brass);
   max-width: 16ch;
   margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(10, 22, 40, 0.45);
 }
 .hero .lede { color: rgba(244, 241, 234, 0.86); }
 .hero-actions {
