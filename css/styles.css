@@ -9,9 +9,9 @@
   --paper: #F4F1EA;
   --paper-2: #E9E4D8;
   --cream: #FBF9F4;
-  --brass: #C4A35A;
-  --brass-2: #76591F;
-  --brass-dim: rgba(196, 163, 90, 0.35);
+  --brass: #D6B86E;
+  --brass-2: #8A6B2E;
+  --brass-dim: rgba(214, 184, 110, 0.35);
   --ink: #1C1B18;
   --body: #2F2D29;
   --muted: #5E5A52;
@@ -370,7 +370,7 @@ main { flex: 1; }
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.35));
 }
 .hero h1 {
-  color: var(--cream);
+  color: var(--brass);
   max-width: 16ch;
   margin-bottom: 1rem;
 }
