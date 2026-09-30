@@ -302,7 +302,7 @@ main { flex: 1; }
   background: var(--navy);
   color: var(--paper);
 }
-.section-dark h2, .section-dark h3 { color: var(--cream); }
+.section-dark h2, .section-dark h3 { color: var(--brass); }
 .section-muted { background: var(--paper-2); }
 
 .eyebrow {
@@ -390,7 +390,7 @@ main { flex: 1; }
   position: relative;
   overflow: hidden;
 }
-.page-hero h1 { color: var(--cream); max-width: 18ch; }
+.page-hero h1 { color: var(--brass); max-width: 18ch; }
 .page-hero .lede { color: rgba(244, 241, 234, 0.82); margin-bottom: 0; }
 .page-hero--photo {
   min-height: 18rem;
@@ -494,7 +494,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   padding: 1.75rem 1.5rem;
   color: var(--paper);
 }
-.tool-panel h3 { color: var(--cream); }
+.tool-panel h3 { color: var(--brass); }
 .tool-panel p { color: rgba(244, 241, 234, 0.8); margin: 0 0 1.25rem; }
 .tool-panel .eyebrow { margin-bottom: 0.5rem; }
 
@@ -527,7 +527,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   padding: 3rem 0;
   text-align: center;
 }
-.cta-band h2 { color: var(--cream); }
+.cta-band h2 { color: var(--brass); }
 .cta-band p {
   color: rgba(244, 241, 234, 0.8);
   max-width: 32rem;
@@ -794,7 +794,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   color: var(--paper);
   padding: 2rem 1.5rem;
 }
-.contact-card h2 { color: var(--cream); }
+.contact-card h2 { color: var(--brass); }
 .contact-card a { color: var(--brass); text-decoration: none; }
 .contact-card a:hover { color: #d4b56a; }
 .contact-card address {
