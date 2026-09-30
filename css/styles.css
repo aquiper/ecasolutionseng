@@ -120,6 +120,7 @@ a:hover { color: var(--brass-2); }
   min-width: 0;
 }
 .brand:hover { color: var(--cream); }
+.brand:hover .brand-name { color: var(--brass); }
 .brand img {
   width: auto;
   height: 3.15rem;
@@ -131,6 +132,7 @@ a:hover { color: var(--brass-2); }
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+  color: var(--brass);
 }
 .brand-sub {
   font-size: 0.68rem;
