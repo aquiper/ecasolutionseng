@@ -151,7 +151,7 @@
         entry.target.classList.add("is-in");
         observer.unobserve(entry.target);
       });
-    }, { root: null, rootMargin: "0px 0px -48px 0px", threshold: 0 });
+    }, { root: null, rootMargin: "0px 0px 12% 0px", threshold: 0 });
 
     targets.forEach(function (el) { el.classList.add("reveal"); });
 

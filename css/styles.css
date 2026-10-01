@@ -451,7 +451,7 @@ main { flex: 1; }
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 a.card:hover,
 a.note-card:hover {
@@ -464,7 +464,6 @@ a.note-card:hover {
   .case-card:hover,
   .tool-card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
   }
 }
 .card-num {
@@ -503,7 +502,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   border: 1px solid var(--brass-dim);
   padding: 1.75rem 1.5rem;
   color: var(--paper);
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 .tool-panel:hover { border-color: var(--brass); }
 @media (hover: hover) {
@@ -566,7 +565,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   border-top: 2px solid var(--brass);
   padding: 1.5rem;
   background: var(--cream);
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 .case-card h3 { font-size: 1.5rem; max-width: 26ch; }
 .case-card dl { margin: 1.5rem 0; }
@@ -752,7 +751,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   background: var(--cream);
   border: 1px solid var(--line);
   padding: 2rem 1.5rem;
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 .tool-card:hover { border-color: var(--brass); }
 .tool-card h2 { margin-bottom: 0.65rem; }
@@ -781,7 +780,7 @@ a.card:hover .card-link { color: var(--brass-2); }
   text-decoration: none;
   color: inherit;
   border-top: 2px solid var(--brass);
-  transition: border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, transform 0.22s ease;
 }
 .note-card:hover { color: inherit; border-color: var(--brass); }
 .note-card h2 { font-size: 1.3rem; }
@@ -1038,8 +1037,7 @@ sub { font-size: 0.72em; }
       opacity 260ms ease,
       translate 260ms ease,
       border-color 0.22s ease,
-      transform 0.22s ease,
-      box-shadow 0.22s ease;
+      transform 0.22s ease;
   }
 }
 
@@ -1062,7 +1060,6 @@ sub { font-size: 0.72em; }
   .tool-card:hover,
   .tool-panel:hover {
     transform: none;
-    box-shadow: none;
   }
 }
 
