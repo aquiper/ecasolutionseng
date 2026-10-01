@@ -107,4 +107,70 @@
     form.addEventListener("submit", updateSubject);
   }
 
+  // Fade hero copy and section blocks once as they enter. No stagger.
+  // translate is separate from the transform used by card hover.
+  function initReveal() {
+    if (!("IntersectionObserver" in window)) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    var itemSelector = ".card, .case-card, .note-card, .tool-panel, .tool-card, .cred, .background-block";
+    var targets = [];
+
+    function push(el) {
+      if (el && targets.indexOf(el) === -1) targets.push(el);
+    }
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll(".hero-content, .page-hero .wrap, .sector-strip"),
+      push
+    );
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll("main .section, main .cta-band, main .client-strip"),
+      function (block) {
+        var items = block.querySelectorAll(itemSelector);
+        var wrap = block.querySelector(":scope > .wrap");
+        if (!items.length) {
+          push(wrap || block);
+          return;
+        }
+        Array.prototype.forEach.call((wrap || block).children, function (child) {
+          if (child.matches(itemSelector) || child.querySelector(itemSelector)) return;
+          push(child);
+        });
+        Array.prototype.forEach.call(items, push);
+      }
+    );
+
+    Array.prototype.forEach.call(document.querySelectorAll("main .offer"), push);
+    if (!targets.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        observer.unobserve(entry.target);
+      });
+    }, { root: null, rootMargin: "0px 0px -48px 0px", threshold: 0 });
+
+    targets.forEach(function (el) { el.classList.add("reveal"); });
+
+    document.addEventListener("focusin", function (e) {
+      var block = e.target.closest && e.target.closest(".reveal");
+      if (!block || block.classList.contains("is-in")) return;
+      block.classList.add("is-in");
+      observer.unobserve(block);
+    });
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        targets.forEach(function (el) {
+          if (!el.classList.contains("is-in")) observer.observe(el);
+        });
+      });
+    });
+  }
+
+  initReveal();
+
 })();
